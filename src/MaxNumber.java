@@ -6,15 +6,17 @@ public class MaxNumber {
 			int n, x, max;
 			System.out.println("Enter the amount of numbers you want to check: ");
 			n = input.nextInt();
-			System.out.println("Enter one number: ");
+			System.out.println("Enter 1. number: ");
 			x = input.nextInt();
 			max = x;
-			for (int i=2; i<=n; i++) {
+			int i;
+			for (i=2; i<=n; i++) {
 				System.out.println("Enter "+ i +". number: ");
 				x = input.nextInt();
 				if (x>max) 
 				max = x;
 			}
+			i=i-1;
 			System.out.println("The max number out of the "+ i +" entered numbers is: " +max);
 			
 		}
